@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>plans</title>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html"><img src="image/logo.png" alt="Gold's Gym Logo"></a>
+      </div>
+      <nav>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="trainers.html">Trainers</a></li>
+          <li><a href="plans.html">Plans</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button class="join-now-btn" onclick="openMembershipForm()">Join Now</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+      <section class="plans-section" id="plans">
+        <h2 class="section-title">Our <span>Plans</span></h2>
+      
+        <div class="bg-img-container">
+          <img src="image/plan bg.jpg" alt="Plans Background" class="bg-img">
+          <div class="bg-overplay"></div>
+        </div>
+      
+        
+        <div class="plan-promo-banner">
+          <h3>🔥 Special Promo: Join this April & get <span>20% OFF</span> all plans!</h3>
+        </div>
+      
+        <div class="plans">
+          <div class="plan-box">
+            <h3>BASIC</h3>
+            <p class="price">₱200<span>/Month</span></p>
+            <ul>
+              <li>Smart workout plan</li>
+              <li>At home workouts</li>
+            </ul>
+            <a href="#membership-form" class="join-now-link">Join Now <span>&rarr;</span></a>
+          </div>
+      
+          <div class="plan-box">
+            <h3>PRO</h3>
+            <p class="price">₱300<span>/Month</span></p>
+            <ul>
+              <li>Pro GYMS</li>
+              <li>Smart workout plan</li>
+              <li>At home workouts</li>
+            </ul>
+            <a href="#membership-form" class="join-now-link">Join Now <span>&rarr;</span></a>
+          </div>
+      
+          <div class="plan-box highlight">
+            <div class="promo-label">20% OFF</div>
+            <h3>PREMIUM</h3>
+            <p class="price">₱500<span>/Month</span></p>
+            <ul>
+              <li>ELITE Gyms & Classes</li>
+              <li>Pro GYMS</li>
+              <li>Smart workout plan</li>
+              <li>At home workouts</li>
+              <li>Personal Training</li>
+            </ul>
+            <a href="#membership-form" class="join-now-link">Join Now <span>&rarr;</span></a>
+          </div>
+        </div>
+      </section>
+      
+      
+      <section id="membership-form" class="hidden">
+        <h2>Gym Membership Form</h2>
+        <form>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="plan">Select Membership Plan:</label>
+          <select id="plan" name="plan">
+            <option value="basic">Basic Plan</option>
+            <option value="pro">Pro Plan</option>
+            <option value="premium">Premium Plan</option>
+          </select>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <footer>
+        <p>&copy; 2025 Gold's Gym. All rights reserved. (School Purposes Only)</p>
+      </footer>
+      <script>
+  function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("show");
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,720 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+  
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+  
+  /* Sticky Header */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: black;
+}
+  
+.logo img {
+  height: 50px;
+}
+  
+  /* Navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+  
+nav ul li a, .join-now-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+  
+.join-now-btn {
+  background-color: orange;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+  
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  }
+  
+  /* Intro Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+  
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+  
+.hero-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: gold;
+  top: 50%;
+  transform: translateY(-45%);
+  width: 100%;
+  padding: 0 20px;
+  font-family: sans-serif;
+}
+  
+.hero-text h1 {
+  font-size: 40px;
+  color: gold;
+  margin: 0;
+  letter-spacing: 2px;
+}
+  
+.hero-text h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+  
+.hero-description {
+  max-width: 700px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 20px auto 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+  
+.hero-description p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: white;
+}
+  
+  
+  /* About */
+.about-section {
+  position: relative;
+  padding: 60px 20px;
+  color: white;
+}
+  
+.bg-img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+  
+.bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
+.about-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+  
+.service-box {
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6); 
+  width: 100%;
+  max-width: 800px;
+}
+  
+.about-left h2,
+.about-right h2 {
+  color: gold;
+
+}
+
+.about-left p,
+.about-right p {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+  justify-content: center;
+}
+
+  /* Services Section*/
+.services-section {
+  position: relative;
+  padding: 60px 20px;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+  
+.bg-img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+    
+.bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+  
+.services-section > *:not(.bg-img-container) {
+  position: relative;
+  z-index: 1;
+}
+  
+.bg-overplay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+    
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+    
+.section-title span {
+  color: gold;
+}
+    
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+    
+.service-box {
+  background: #1a1a1a;
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+    
+.service-box:hover {
+  transform: scale(1.05);
+}
+    
+.service-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+    
+.service-box h3 {
+  padding: 15px;
+  margin: 0;
+  font-size: 18px;
+}
+  
+    
+  
+  /* Trainers Section */
+.trainers-section {
+  position: relative;
+  padding: 60px 20px;
+  background-color: black ;
+  text-align: center;
+  color: goldenrod;
+  overflow: hidden;
+}
+  
+.bg-img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+  
+.bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
+.trainers-section > *:not(.bg-img-container) {
+  position: relative;
+  z-index: 1;
+}
+  
+.trainers-section .section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+  
+.trainers-section .section-title span {
+  color: gold;
+}
+  
+.trainer-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+  
+.trainer-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+  
+.trainer-card:hover {
+  transform: translateY(-5px); 
+}
+  
+.trainer-card img {
+width: 100%;
+height: 200px;
+object-fit: cover;  border-radius: 10px;
+}
+  
+.trainer-role {
+  color: black;
+  font-weight: bold;
+  margin-top: 15px;
+}
+  
+.trainer-name {
+  margin: 10px 0;
+  font-size: 20px;
+}
+  
+.trainer-desc {
+  font-size: 14px;
+  color: #555;  
+}
+  
+  
+  /* Plans Section */
+.plans-section {
+  background-color: #0f0f0f;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+}
+
+.plans-section > *:not(.bg-img-container) {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-overplay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.section-title span {
+  color: yellow;
+}
+
+.plan-promo-banner {
+  background: #222;
+  color: #ffcc00;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-left: 5px solid #ffcc00;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.plan-promo-banner span {
+  color: #fff000;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.plan-box {
+  background: black;
+  border: 1px solid yellow;
+  border-radius: 10px;
+  padding: 30px;
+  width: 280px;
+  text-align: left;
+  transition: transform 0.5s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 153, 0.2);
+  position: relative;
+}
+
+.plan-box:hover {
+  transform: scale(1.05);
+}
+
+.plan-box h3 {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 24px;
+  color: #ffb200;
+  margin: 10px 0;
+}
+
+.price span {
+  color: #aaa;
+  font-size: 18px;
+}
+
+.plan-box ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.join-now-link {
+  color: #ffb200;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.join-now-link:hover {
+  color: white;
+}
+
+.plan-box.highlight {
+  border: 2px solid #ffcc00;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+}
+
+.promo-label {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ff0000;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+  /* Membership Form */
+#membership-form {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+  
+#membership-form.hidden {
+  display: none;
+}
+  
+#membership-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+  
+#membership-form input,
+#membership-form select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+  
+#membership-form button {
+  padding: 10px;
+  background-color: gold;
+  border: none;
+  font-weight: bold;
+  color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+  
+  /* Contact Section */
+.contact-section {
+  position: relative;
+  padding: 60px 20px;
+  color: #fff;
+}
+  
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 1;
+  position: relative;
+}
+  
+.contact-info, .membership-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 48%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 10pxx ;
+}
+  
+.contact-info h2,
+.membership-form h2 {
+  margin-bottom: 20px;
+  color: gold;
+}
+  
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+  
+.info-item img {
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+}
+  
+.info-item p,
+.info-item a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+  
+.membership-form {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 10px;
+}
+  
+.membership-form h2 {
+  color: gold;
+  margin-bottom: 20px;
+}
+  
+.membership-form form label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+  
+.membership-form input,
+.membership-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+  
+.membership-form button {
+  background-color: gold;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+  /* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+nav ul {
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background-color: black;
+  width: 200px;
+  display: none;
+}
+    
+nav ul.show {
+  display: flex;
+}
+
+#nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 200px;
+  padding: 20px;
+  z-index: 99;
+}
+
+#nav-links.show {
+  display: flex;
+}
+    
+.hamburger {
+  display: block;
+  font-size: 30px;
+  cursor: pointer;
+  right: 20px;
+  top: 15px;
+  z-index: 100;
+}
+
+.intro-text {
+  position: static;
+  transform: none;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.about-content {
+  flex-direction: column;
+  text-align: center;
+}
+  
+.about-image img {
+  width: 300px;
+}
+  
+.trainers-gallery img {
+  width: 200px;
+  height: 200px;
+}
+  
+.plans-container {
+  flex-direction: column;
+}
+  
+.contact-section {
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+  
+#membership-form form {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+  
+footer {
+  font-size: 12px;
+}
+}
+
+@media screen and (max-width: 480px) {
+.intro-image img {
+  height: 300px;
+}
+
+.intro-text {
+  padding: 15px;
+  max-width: 90%;
+}
+  
+.about-content,
+.trainers-gallery,
+.contact-section {
+  gap: 20px;
+}
+  
+.contact-left img {
+  width: 10px;
+  height: 10px;
+  object-fit: cover;
+}
+}
